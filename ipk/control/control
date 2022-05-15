@@ -1,0 +1,6 @@
+Package: enable-live-audio
+Version: 0.1.0
+Maintainer: funnel
+Description: Enable DJI live audio transmission from Airunit to Goggles
+Architecture: armv7-3.2
+Depends: wtfos-modloader

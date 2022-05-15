@@ -1,0 +1,5 @@
+#!/system/bin/sh
+
+#modmanager disable diy_glasses enable-live-audio
+#we use dinit instead as this makes it configurator friendly out of the box
+/opt/sbin/dinitctl disable enable-live-audio || true

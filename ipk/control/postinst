@@ -1,0 +1,8 @@
+#!/system/bin/sh
+
+#modmanager enable diy_glasses enable-live-audio
+#we use dinit instead as this makes it configurator friendly out of the box
+/opt/sbin/dinitctl enable enable-live-audio || true
+
+#liveview audio disabled if headphone volume set to 0
+setprop persist.dji.volume.headphone 6
