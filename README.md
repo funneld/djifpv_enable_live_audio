@@ -1,20 +1,19 @@
 # Enable live audio for DJI FPV Goggles/AU 
 Enables the live audio transmission from Airunit to Goggles.
 
+Warning: Not compatible with msp-osd so you can't run both simultaneously.
+
 ## Installation
 
-Install wtfos-modloader
-
-`opkg install wtfos-modloader`
-
-Install enable-live-audio
-`opkg install enable-live-audio`
+Install enable-live-audio:
+- `opkg install enable-live-audio`
 
 
-or manually
-`make ipk`
-adb push ...
-`opkg install "package-name"`
+
+Or manually:
+- `make ipk`
+- adb push ...
+- `opkg install "package-name"`
 
 
 ## Usage
@@ -26,8 +25,8 @@ Audio volume can be set:
 - manually with `setprop persist.dji.volume.headphone 6` with persistent values from 1-6. 0 disables the live audio code.
 
 
+## Known bugs
 
-##Known bugs
-
+- This feature is not compatible with msp-osd(https://github.com/bri3d/msp-osd) since it relies on the dji_glasses service being enabled.
 - When liveview audio is started videos containing audio can't be played back.
 - The glasses GUI will restart if signal is totally lost. Doesn't have any bad effect on the live video feed.
