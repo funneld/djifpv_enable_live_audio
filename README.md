@@ -1,13 +1,12 @@
 # Enable live audio for DJI FPV Goggles/AU 
 Enables the live audio transmission from Airunit to Goggles.
 
-Warning: Not compatible with msp-osd so you can't run both simultaneously.
+Will not work simultaneously with msp-osd.
 
 ## Installation
 
 Install enable-live-audio:
 - `opkg install enable-live-audio`
-
 
 
 Or manually:
