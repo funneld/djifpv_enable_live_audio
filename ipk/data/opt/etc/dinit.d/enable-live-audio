@@ -1,3 +1,2 @@
 type = process
 command = /opt/bin/lv_audio.sh
-stop-command = modmanager disable diy_glasses enable_live_audio

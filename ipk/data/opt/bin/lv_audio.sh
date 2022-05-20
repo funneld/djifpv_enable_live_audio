@@ -7,17 +7,10 @@ beep()
     test_pwm 0 2600 50 1 0
 }
 
-write_to_cfg_file()
-{
-    printf '\x00' | busybox dd of=/blackbox/glass_user_setting.dat bs=1 seek=157 count=1 conv=notrunc
-}
-
 modmanager_restart_liveaudio()
 {
     modmanager disable diy_glasses enable_live_audio
-    sleep 2
-    write_to_cfg_file
-    sleep 2
+    sleep 4
     modmanager enable diy_glasses enable_live_audio
 }
 
