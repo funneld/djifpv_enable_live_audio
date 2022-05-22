@@ -17,7 +17,7 @@ Or manually:
 
 ## Usage
 
-After the liveview audio code is started the goggles make a short beep indicating live audio has started. Another short beep after the AU is disconnected indicates the liveview audio code stopped.
+Live audio will auto start on boot or when the AU is restarted after switching batteries. It can take up to 30s after powering on the goggles and about 15s when restarting the AU.
 
 Audio volume can be set:
 - by playing back a video that doesn't contain any audio and adjust the volume with the goggles joystick up/down commands. 0 volume disables the live audio code.
@@ -28,4 +28,3 @@ Audio volume can be set:
 
 - This feature is not compatible with msp-osd(https://github.com/bri3d/msp-osd) since it relies on the dji_glasses service being enabled.
 - When liveview audio is started videos containing audio can't be played back.
-- The glasses GUI will restart if signal is totally lost. Doesn't have any bad effect on the live video feed.

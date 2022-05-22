@@ -8,8 +8,8 @@ all:
 	echo "2.0" > tmp/debian-binary
 	cp -r data tmp/
 	cp -r control tmp/
-	chmod +x tmp/data/opt/bin/lv_audio.sh
-	chmod +x tmp/control/*
+	chmod +x tmp/control/postinst
+	chmod +x tmp/control/prerm
 	cd tmp/control && tar --owner=0 --group=0 -czvf ../control.tar.gz .
 	cd tmp/data && tar --owner=0 --group=0 -czvf ../data.tar.gz .
 	cd tmp/ && tar --owner=0 --group=0 -czvf "../${IPK_NAME}" ./control.tar.gz ./data.tar.gz ./debian-binary
