@@ -22,8 +22,8 @@ Or manually:
 Live audio will auto start on boot or when the AU is restarted after switching batteries. It can take up to 30s after powering on the goggles and about 15s when restarting the AU.
 
 Audio volume can be set:
-- by playing back a video that doesn't contain any audio and adjust the volume with the goggles joystick up/down commands. 0 volume disables the live audio code.
-- manually with `setprop persist.dji.volume.headphone 6` with persistent values from 1-6. 0 disables the live audio code.
+- by playing back a video that doesn't contain any audio and adjust the volume with the goggles joystick up/down commands.
+- manually with `setprop persist.dji.volume.headphone 6` with persistent values from 1-6.
 
 
 ## Known bugs
