@@ -6,6 +6,7 @@ typedef enum gs_link_stat_t {
     GS_LINK_STAT_UKNOWN=3
 } gs_link_stat_t;
 
+static void *guiLib = 0;
 static bool restart_lv_audio = false;
 static int32_t (* gs_modem_get_link_state_wrap)(void *, enum gs_link_stat_t *) = 0;
 static uint32_t (* timeOut)(void *this) = 0;
