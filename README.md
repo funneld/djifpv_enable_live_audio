@@ -3,7 +3,7 @@ Enables the live audio transmission from Airunit to Goggles.
 
 Will not work simultaneously with msp-osd.
 
-Works only with the normal Airunit that has an integrated microphone. Will not work with Caddx Vista.
+Currently working only with Goggles V1 and the standard Airunit that has an integrated microphone. Will not work with Caddx Vista.
 
 ## Installation
 
