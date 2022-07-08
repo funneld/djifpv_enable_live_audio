@@ -68,7 +68,6 @@ int32_t _ZN19GlassRacingChnlMenu7timeOutEv (void* this) {
 	clock_gettime(CLOCK_MONOTONIC, &now);
 
 	if((link == GS_LINK_STAT_NORMAL) && !restart_lv_audio && ((now.tv_sec - start.tv_sec) > 9)){
-		sleep(10);	//wait for AU to boot
 		restart_lv_audio = true;
 		setAudioLiveViewEnable((void *)inst, true, false);
 		printf("setAudioLiveViewEnable ENABLED\n");
