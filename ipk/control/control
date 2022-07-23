@@ -1,6 +1,7 @@
 Package: enable-live-audio
-Version: 0.1.7
+Version: 0.1.8
 Maintainer: funnel
 Description: Enable DJI live audio transmission from Airunit to Goggles. Currently only for Goggles V1 and standard Airunit with an integrated microphone.
 Architecture: pigeon-glasses-v1
+Homepage: https://github.com/funneld/djifpv_enable_live_audio
 Depends: wtfos-modloader
